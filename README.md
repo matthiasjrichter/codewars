@@ -1,0 +1,1 @@
+Results of my daily codewars challenges.

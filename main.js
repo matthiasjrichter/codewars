@@ -146,3 +146,18 @@ const hoopCount = n => n < 10 ? 'Keep at it until you get it' : 'Great, now move
 // Write a function that checks if a given string (case insensitive) is a palindrome.
 
 const isPalindrome = x => x.toLowerCase() === x.toLowerCase().split("").reverse().join("")
+
+// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+// 
+// Use conditionals to return the proper message:
+// 
+// case	return
+// name equals owner	'Hello boss'
+// otherwise	'Hello guest'
+
+function greet (name, owner) {
+  if (name == owner) return "Hello boss"
+  else return "Hello guest"
+}
+//alternative:
+const greet = (name,owner) => name == owner ? "Hello boss" : "Hello guest"

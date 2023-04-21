@@ -210,3 +210,6 @@ function sumStr(a,b) {
   return String (Number(a) + Number(b))
 }
 sumStr(20,30)
+//arrow function:
+const sumStr = (a,b) => String(Number(a) + Number(b))
+sumStr(20,30)

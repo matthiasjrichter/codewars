@@ -1,3 +1,4 @@
+
 ///////
 //Are you better than average?
 //add yourpoints to classPoints array
@@ -176,11 +177,10 @@ function otherAngle(a, b) {
 const otherAngle = (a, b) => 180 - a - b
 otherAngle(40,40)
 
-
-// When provided with a number between 0-9, return it in words.
-// Input :: 1
-// Output :: "One".
-// If your language supports it, try using a switch statement.
+//Make a simple function called greet that returns the most-famous "hello world!".
+//
+// Style Points
+// Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
 
 function switchItUp(number){
 switch(number){
@@ -216,4 +216,27 @@ switch(number){
   break
 }
 }
-switchItUp(1)
+greet()
+
+// Create a function that takes 2 integers in form of a string as an input, and outputs the sum (also as a string):
+// 
+// Example: (Input1, Input2 -->Output)
+// 
+// "4",  "5" --> "9"
+// "34", "5" --> "39"
+// "", "" --> "0"
+// "2", "" --> "2"
+// "-5", "3" --> "-2"
+// Notes:
+// 
+// If either input is an empty string, consider it as zero.
+// 
+// Inputs and the expected output will never exceed the signed 32-bit integer limit (2^31 - 1)
+
+function sumStr(a,b) {
+  return String (Number(a) + Number(b))
+}
+sumStr(20,30)
+//arrow function:
+const sumStr = (a,b) => String(Number(a) + Number(b))
+sumStr(20,30)

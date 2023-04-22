@@ -176,40 +176,44 @@ function otherAngle(a, b) {
 const otherAngle = (a, b) => 180 - a - b
 otherAngle(40,40)
 
-//Make a simple function called greet that returns the most-famous "hello world!".
-//
-// Style Points
-// Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
 
-function greet(){
-  if(2 + 2 === 5){
-    alert ("Big Brother is Watching You.")
-    return "War is Peace, Freedom is Slavery, Ignorance is Strength."
-  }else{
-    return "hello world!"
-  }
+// When provided with a number between 0-9, return it in words.
+// Input :: 1
+// Output :: "One".
+// If your language supports it, try using a switch statement.
+
+function switchItUp(number){
+switch(number){
+  case 0:
+  return "Zero"
+  break
+  case 1:
+  return "One"
+  break
+  case 2:
+  return "Two"
+  break
+  case 3:
+  return "Three"
+  break
+  case 4:
+  return "Four"
+  break
+  case 5:
+  return "Five"
+  break
+  case 6:
+  return "Six"
+  break
+  case 7:
+  return "Seven"
+  break
+  case 8:
+  return "Eight"
+  break
+  case 9:
+  return "Nine"
+  break
 }
-greet()
-
-// Create a function that takes 2 integers in form of a string as an input, and outputs the sum (also as a string):
-// 
-// Example: (Input1, Input2 -->Output)
-// 
-// "4",  "5" --> "9"
-// "34", "5" --> "39"
-// "", "" --> "0"
-// "2", "" --> "2"
-// "-5", "3" --> "-2"
-// Notes:
-// 
-// If either input is an empty string, consider it as zero.
-// 
-// Inputs and the expected output will never exceed the signed 32-bit integer limit (2^31 - 1)
-
-function sumStr(a,b) {
-  return String (Number(a) + Number(b))
 }
-sumStr(20,30)
-//arrow function:
-const sumStr = (a,b) => String(Number(a) + Number(b))
-sumStr(20,30)
+switchItUp(1)

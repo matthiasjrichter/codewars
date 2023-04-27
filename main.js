@@ -316,3 +316,11 @@ const finalGrade = (exam, projects) => {
     exam > 50 && projects >= 2 ? 75 : 0
   )
 }
+
+// Write a function to split a string and convert it into an array of words.
+
+function stringToArray(string){
+	return string.split(" ")
+
+}
+stringToArray("I hava an idea")

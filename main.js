@@ -379,3 +379,11 @@ const areaOrPerimeter = function(l , w) {
 function removeUrlAnchor(url){
   return url.split("#")[0]
 }
+
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+// 
+// Return your answer as a number.
+
+function sumMix(x){
+  return x.reduce((acc, cur) => acc + Number(cur), 0)
+}

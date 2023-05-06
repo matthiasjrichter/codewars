@@ -465,3 +465,21 @@ function positiveSum(arr) {
 }
 //shorter:
 const positiveSum = arr => arr.filter(element => element >= 0).reduce((acc,cur) => acc+cur, 0)
+
+
+
+// Convert number to reversed array of digits
+// Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+// 
+// Example(Input => Output):
+// 35231 => [1,3,2,5,3]
+// 0 => [0]
+function digitize(n) {
+  return String(n).split("").reverse().map(Number)
+}
+//explanation:
+function digitize(n) {
+  return String(n).split("") //convert number to string and split into array
+                  .reverse() //reverse array
+                  .map(Number) //make elements numbers again
+}

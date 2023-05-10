@@ -543,15 +543,28 @@ function noOdds(values){
 }
 //or
 const noOdds = values => values.filter( (e) => e % 2 === 0)
-//or without filter
-function noOdds(arr){
-  let evens = [];
-  
-  for (let i = 0; i < arr.length; i++) {
-    if(arr[i] % 2 === 0) {
-      evens.push(arr[i]);
+//or with for loop
+function noOdds(values) {
+  var evenValues = [];
+
+  for (var i = 0; i < values.length; i++) {
+    if (values[i] % 2 === 0) {
+      evenValues.push(values[i]);
     }
   }
-  
-  return evens;
+
+  return evenValues;
+}
+
+//or with forEach loop
+function noOdds(values) {
+  var evenValues = [];
+
+  values.forEach(function (e) {
+    if (e % 2 === 0) {
+      evenValues.push(e);
+    }
+  });
+
+  return evenValues;
 }

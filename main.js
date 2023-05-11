@@ -543,6 +543,9 @@ function noOdds(values){
 }
 //or
 const noOdds = values => values.filter( (e) => e % 2 === 0)
+
+
+
 //or with for loop
 function noOdds(values) {
   var evenValues = [];
@@ -568,3 +571,29 @@ function noOdds(values) {
 
   return evenValues;
 }
+
+//or with map, pretty much the same as forEach
+function noOdds(values) {
+  var evenValues = [];
+
+  values.map(function (e) {
+    if (e % 2 === 0) {
+      evenValues.push(e);
+    }
+  });
+
+  return evenValues;
+}
+
+// The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
+// 
+// For example:
+// 
+// 1.08 --> 30
+// Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
+
+function cockroachSpeed(s) {
+  return Math.floor(s*27.777778)
+}
+//short
+const cockroachSpeed = s => Math.floor(s * 27.777778)

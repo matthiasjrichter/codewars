@@ -360,7 +360,6 @@ const setAlarm = (employed, vacation) => employed == true && vacation === false 
 // 6, 10 --> 32
 // 3, 3 --> 9
 // Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
-
 const areaOrPerimeter = function(l , w) {
   if(l === w) return l * w
   else return 2 * (l + w)
@@ -368,14 +367,11 @@ const areaOrPerimeter = function(l , w) {
 //alternative:
 // const areaOrPerimeter = (l, w) => l === w ? l * w : 2 * (l + w)
 
-
-
 // Complete the function/method so that it returns the url with anything after the anchor (#) removed.
 // 
 // Examples
 // "www.codewars.com#about" --> "www.codewars.com"
 // "www.codewars.com?page=1" -->"www.codewars.com?page=1"
-
 function removeUrlAnchor(url){
   return url.split("#")[0]
 }
@@ -383,7 +379,6 @@ function removeUrlAnchor(url){
 // Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
 // 
 // Return your answer as a number.
-
 function sumMix(x){
   return x.reduce((acc, cur) => acc + Number(cur), 0)
 }
@@ -398,7 +393,6 @@ function sumMix(x){
 // 
 // "GCAT"  =>  "GCAU"
 // The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid, i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
-
 function DNAtoRNA(dna) {
   return dna.replaceAll("T", "U")
 }
@@ -444,7 +438,6 @@ function sum (numbers) {
 // Input: [0, -1, -5]
 // Output: "even"
 // Have fun!
-
 function oddOrEven(array) {
   if (array.reduce((acc,cur) => acc + cur, 0) % 2 === 0){
     return "even"
@@ -458,14 +451,12 @@ const oddOrEven = array => array.reduce((acc,cur) => acc + cur, 0) % 2 === 0 ? "
 // Example [1,-4,7,12] => 1 + 7 + 12 = 20
 // 
 // Note: if there is nothing to sum, the sum is default to 0.
-
 function positiveSum(arr) {
   return arr.filter(element => element >= 0)
   .reduce((acc,cur) => acc+cur, 0)
 }
 //shorter:
 const positiveSum = arr => arr.filter(element => element >= 0).reduce((acc,cur) => acc+cur, 0)
-
 
 
 // Convert number to reversed array of digits
@@ -484,7 +475,6 @@ function digitize(n) {
                   .map(Number) //make elements numbers again
 }
 
-
 // Given an array of integers.
 // 
 // Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
@@ -493,7 +483,6 @@ function digitize(n) {
 // 
 // Example
 // For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
-
 function countPositivesSumNegatives(input) {
   if (input == null || input.length == 0) {
     return [];
@@ -508,7 +497,6 @@ function countPositivesSumNegatives(input) {
   let result = new Array(positives, negatives);
   return result;
 }
-// OMG this is so messy, sorry!
 
 
 // Terminal game move function
@@ -522,18 +510,14 @@ function move (position, roll) {
   return position + 2 * roll
 }
 
-
 // Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 // 
 // Note: input will never be an empty string
-
 function fakeBin(x){
 return x.split("").map((e) => e < 5? 0 : 1).join("")
 }
 //short:
 const fakeBin = x => x.split('').map((e) => e < 5 ? 0 : 1).join('')
-
-
 
 // Write a small function that returns the values of an array that are not odd.
 // 
@@ -543,9 +527,6 @@ function noOdds(values){
 }
 //or
 const noOdds = values => values.filter( (e) => e % 2 === 0)
-
-
-
 //or with for loop
 function noOdds(values) {
   var evenValues = [];
@@ -555,14 +536,12 @@ function noOdds(values) {
       evenValues.push(values[i]);
     }
   }
-
   return evenValues;
 }
 
 //or with forEach loop
 function noOdds(values) {
   var evenValues = [];
-
   values.forEach(function (e) {
     if (e % 2 === 0) {
       evenValues.push(e);
@@ -571,7 +550,6 @@ function noOdds(values) {
 
   return evenValues;
 }
-
 //or with map, pretty much the same as forEach
 function noOdds(values) {
   var evenValues = [];
@@ -608,7 +586,6 @@ const cockroachSpeed = s => Math.floor(s * 27.777778)
 // Notes
 // The number can be negative already, in which case no change is required.
 // Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
-
 function makeNegative(num) {
   if(num > 0){
     return num - 2 * num
@@ -622,7 +599,7 @@ const makeNegative = num => num > 0 ? num - 2 * num : num
 function makeNegative(num) {
   return num > 0 ? -num : num;
 }
-//clever way
+//clever
 function makeNegative(num) {
   return -Math.abs(num);
 }

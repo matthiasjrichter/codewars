@@ -665,3 +665,23 @@ function humanYearsCatYearsDogYears(humanYears) {
   else if(humanYears === 2) return [humanYears,24,24]
   else return [humanYears,24 + 4 * (humanYears - 2),24 + 5 * (humanYears - 2)]
 }
+
+// In this Kata we are passing a number (n) into a function.
+// 
+// Your code will determine if the number passed is even (or not).
+// 
+// The function needs to return either a true or false.
+// 
+// Numbers may be positive or negative, integers or floats.
+// 
+// Floats with decimal part non equal to zero are considered UNeven for this kata.
+function testEven(n) {
+  if(n % 2 === 0) return true
+  else return false
+}
+//or
+function testEven(n) {
+  return n % 2 === 0
+}
+//or
+let testEven = n => n % 2 === 0

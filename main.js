@@ -757,12 +757,21 @@ function minMax(arr){
   return [Math.min(...arr), Math.max(...arr)]; //Math.min()
 }
 
-// Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+// Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
 // 
-// Example:
-// ["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
+// For example,
 // 
-// None of the arrays will be empty, so you don't have to worry about that!
-
-
-
+// [true,  true,  true,  false,
+//   true,  true,  true,  true ,
+//   true,  false, true,  false,
+//   true,  false, false, true ,
+//   true,  true,  true,  true ,
+//   false, false, true,  true]
+// The correct answer would be 17.
+// 
+// Hint: Don't forget to check for bad values like null/undefined
+function countSheeps(arrayOfSheep) {
+  return arrayOfSheep.filter(sheep => sheep === true).length
+}
+//or
+let countSheeps = arrayOfSheep => arrayOfSheep.filter(sheep => sheep === true).length

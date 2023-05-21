@@ -786,3 +786,7 @@ test([1,5,2])
 // For example:
 // 
 // [1, 2, 3] --> [2, 4, 6]
+function maps(x){
+  return x.map(x => x * 2);
+//arrow
+let maps = x => x.map(x => x * 2)

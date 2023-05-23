@@ -811,3 +811,15 @@ const findNeedle = haystack => `found the needle at position ${haystack.findInde
 
 findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])
 
+// Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+// 
+// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+// invert([]) == []
+// You can assume that all values are integers. Do not mutate the input array/list.
+// * -1
+function invert(array) {
+   return array.map( x => x * -1)
+}
+//arrow
+let invert = array => array.map(x => x * -1)

@@ -810,3 +810,4 @@ function findNeedle(haystack) {
 const findNeedle = haystack => `found the needle at position ${haystack.findIndex((element) => element === "needle")}`
 
 findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])
+

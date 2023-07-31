@@ -25,3 +25,9 @@ var isSquare = function (n) {
 
 //alternative
 const isSquare = (n) => Math.sqrt(n) === Math.trunc(Math.sqrt(n))
+
+//using modulo
+const isSquare = n => Math.sqrt(n) % 1 === 0
+
+//using isInteger()
+const isSquare = n => Number.isInteger(Math.sqrt(n))

@@ -22,3 +22,18 @@ function sumDigits(number) {
         .split("")
         .reduce((acc, cur) => acc + +cur, 0)
 }
+
+//no strings. example: sumDigits(-789) should result in 24
+function sumDigits(number) {
+    let sum = 0 //initializes sum at 0
+    let num = Math.abs(number) //makes negative number positive. -789 becomes 789
+
+    while (num > 0) { //When we reach 0.7 -> 0 the while loop stops.
+        sum += num % 10 //modulo gives us the last digit: 9. We then add that to sum.
+        num = Math.trunc(num / 10) //dividing num by 10 and then removing fractional digit gives us the next digit to the left: 8. 
+    }
+
+    return sum //returns the result once the while loop ends
+}
+
+sumDigits(789) //24

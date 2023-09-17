@@ -76,6 +76,8 @@ function fizzbuzz(n) {
   }
   return arr;
 }
+fizzbuzz(5); //[1, 2, "Fizz", 4, "Buzz"]
+
 
 //creating the array first, then using .map() on it.
 function fizzbuzz(n) {

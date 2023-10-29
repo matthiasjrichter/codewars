@@ -32,14 +32,22 @@ function getMiddle(s) {
   }
 }
 
-//using slice slice() and trunc()
+//using slice() and trunc()
 function getMiddle(s) {
-  if (s.length % 2 === 0) return s.slice([s.length / 2 - 1], [s.length / 2 + 1]);
-  else return s[Math.trunc(s.length / 2)];
+    if (s.length % 2 === 0) return s.slice(s.length / 2 - 1, s.length / 2 + 1);
+    else return s[Math.trunc(s.length / 2)];
 }
 
 //one line
-const getMiddle = (s) => s.length % 2 === 0 ? s.slice([s.length / 2 - 1], [s.length / 2 + 1]) : s[Math.trunc(s.length / 2)];
+const getMiddle = (s) => s.length % 2 === 0 ? s.slice(s.length / 2 - 1, s.length / 2 + 1) : s[Math.trunc(s.length / 2)];
+
+//slice() works without trunc()
+function getMiddle(s) {
+    return s.slice((s.length - 1) / 2, s.length / 2 + 1);
+}
+
+//one line
+const getMiddle = (s) => s.slice((s.length - 1) / 2, s.length / 2 + 1);
 
 //test cases
 getMiddle("testing"); //"t"

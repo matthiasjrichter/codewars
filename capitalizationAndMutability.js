@@ -26,3 +26,6 @@ const capitalizeWord = (word) => word[0].toUpperCase() + word.slice(1);
 
 //with charAt()
 const capitalizeWord = (word) => word.charAt(0).toUpperCase() + word.slice(1);
+
+//replace()
+const capitalizeWord = (word) => word.replace(word[0], word[0].toUpperCase());

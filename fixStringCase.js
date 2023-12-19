@@ -24,3 +24,31 @@ function solve(s){
     let upperCaseArr = s.split("").filter((e) => e === e.toUpperCase())
     return lowerCaseArr.length >= upperCaseArr.length ? s.toLowerCase() : s.toUpperCase()
 }
+
+//counters
+function solve(s) {
+  let lowerCount = 0;
+  let upperCount = 0;
+  for (let char of s) {
+    if (char.toLowerCase() === char) {
+      lowerCount++;
+    } else {
+      upperCount++;
+    }
+  }
+  if (lowerCount >= upperCount) return s.toLowerCase();
+  else return s.toUpperCase();
+}
+
+//counters 2
+function solve(s) {
+  let lowerCount = 0;
+  let upperCount = 0;
+  for (let char of s) {
+    char.toLowerCase() === char ? lowerCount++ : upperCount++;
+  }
+  return lowerCount >= upperCount ? s.toLowerCase() : s.toUpperCase();
+}
+
+//test
+solve("CODe") //= "CODE". Uppercase characters > lowecase. Change only the "e" to uppercase.

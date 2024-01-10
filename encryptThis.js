@@ -22,9 +22,11 @@
 //   // Implement me! :)
 // }
 
+
+//codewars spoiled me:
 const encryptThis = (text) => text.split(" ").map((e) => e.length === 1 ? e.charCodeAt(0) : e.length === 2 ? e.charCodeAt(0) + e[1] : e.charCodeAt(0) + e[e.length - 1] + e.slice(2, e.length - 1) + e[1]).join(" ")
 
-//more readable:
+//this is good practice:
 function encryptThis(text) {
   return text.split(" ")
     .map((e) => {
@@ -34,6 +36,10 @@ function encryptThis(text) {
     })
     .join(" ");
 }
+
+//I hate humans:
+const encryptThis = text => text.split(' ').map(word => word.replace(/(^\w)(\w)(\w*)(\w$)/, `$1$4$3$2`).replace(/^\w/, word.charCodeAt(0))).join(' ');
+
 
 //test
 encryptThis("A wise old owl lived in an oak") // "65 119esi 111dl 111lw 108dvei 105n 97n 111ka");

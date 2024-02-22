@@ -31,5 +31,8 @@ function nthSmallest(arr, pos) {
 //arrow function
 const nthSmallest = (arr, pos) => arr.sort((a, b) => a - b)[pos - 1];
 
+//spread so arr doesn't get mutated
+const nthSmallest = (arr, pos) => [...arr].sort((a, b) => a - b)[pos - 1];
+
 //test
 nthSmallest([2, 169, 13, -5, 0, -1], n); // return 2

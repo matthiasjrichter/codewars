@@ -8,7 +8,6 @@
 // If the provided array is empty, or is an empty string, return 'Gym is empty'. If you are given an array of numbers, return 'This isn't the gym!!'.
 //
 // FIGHT!!
-//
 // Original design of this kata was a much more beautiful thing - the test cases illustrate the idea, and the intended output. I am unable to make the actual output go over multiple lines so for now at least you will have to imagine the beauty!
 //
 // function headSmash(array) {

@@ -21,4 +21,4 @@ const solution = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) 
     return P_total;
 };
 
-// I could probably do this in less lines but now I am tired. If you are reading this: Got outside, enjoy life, hug someone (with their consent)
+// I could probably do this in less lines but now I am tired. If you are reading this: Go outside, enjoy life, hug someone (with their consent)

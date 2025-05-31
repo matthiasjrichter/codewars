@@ -19,3 +19,6 @@
 // }
 
 const copyList = (l) => [...l];
+
+// Alternative
+const copyList = (l) => l.slice();

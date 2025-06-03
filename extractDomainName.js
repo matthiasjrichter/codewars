@@ -13,5 +13,5 @@ https: function domainName(url) {
     .split(".")[0];
 }
 
-// Arrow function
 const domainName = (url) => url.replaceAll("http://", "").replaceAll("https://", "").replaceAll("www.", "").split(".")[0];
+// Arrow function

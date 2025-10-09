@@ -20,7 +20,7 @@ function letterCheck(arr) {
   return [...str2].every((e) => str1.includes(e));
 }
 
-// Set. This shold work but codewars is Node v18 so doesn't support it yet
+// Set. This should work but codewars is Node v18 so doesn't support it yet
 function letterCheck(arr) {
   let [set1, set2] = [new Set(arr[0].toLowerCase()), new Set(arr[1].toLowerCase())];
   return set2.isSubsetOf(set1);

@@ -16,3 +16,10 @@ function differenceInAges(ages) {
     let max = Math.max(...ages);
     return [min, max, max - min];
 }
+
+// alternative
+function differenceInAges(ages){
+  const [min, max] = [Math.min(...ages), Math.max(...ages)];
+  const difference = max - min;
+  return [min, max, difference];
+}
